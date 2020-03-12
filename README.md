@@ -26,6 +26,7 @@ Application configuration can be setup using the following strategies:
 
 
 We want external configurations to:
+
 ● Be able to cater to large number of dependent services(usually requires a lot of manual work)
 
 ● Ensure dynamic updates without restage/restart
@@ -34,6 +35,7 @@ We want external configurations to:
 
 
 Above mentioned challenges can be mitigated by using the following desired solutions for configuration by making it:
+
 ● Platform, Cloud-Independent and Language-independent
 
 ● Centralized
@@ -47,6 +49,7 @@ Above mentioned challenges can be mitigated by using the following desired solut
 
 
 Finally, the solution can be found as under:
+
 ● Use Spring Cloud Config for external configuration management. This provides centralized, externalized, secured, easy-to-reach source of application configuration
 
 ● Use Spring Cloud Bus to provide a simple way to notify the clients to config changes(no restage/restart needed)
