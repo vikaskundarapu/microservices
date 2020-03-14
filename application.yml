@@ -1,0 +1,40 @@
+# This single codebase performs generating of subject, verb, article, adjective, and noun, plus sentence assembly.
+# True microservices would have separate codebases, but for our purposes a single codebase is fine.
+
+---
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://localhost:8010/eureka/
+      defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/  
+---
+spring:
+  profiles: sentence
+server:
+  port: 8020  
+randomWords: NotApplicable
+    
+---
+spring:
+  profiles: subject
+randomWords: I,You,He,She,It
+  
+---
+spring:
+  profiles: verb
+randomWords: ran,knew,had,saw,bought
+
+---
+spring:
+  profiles: article
+randomWords: a,the
+
+---
+spring:
+  profiles: adjective
+randomWords: reasonable,leaky,suspicious,ordinary,unlikely
+
+---
+spring:
+  profiles: noun
+randomWords: boat,book,vote,seat,backpack,partition,groundhog
