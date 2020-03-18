@@ -56,4 +56,5 @@ Finally, the solution can be found as under:
 
 ● Use Spring Cloud Netflix Eureka to ensure "Service Discovery" which allows applications to register themselves as clients
 
-
+For more information on these topics, refer to projects section which covers these concepts in detail. 
+Link: https://github.com/vikaskundarapu/microservices/projects
